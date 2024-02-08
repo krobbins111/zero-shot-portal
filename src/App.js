@@ -26,8 +26,8 @@ function App() {
   function handleSubmit(event) {
     event.preventDefault()
     setLoading(true)
-    // const url = 'https://clip-app.azurewebsites.net/api/clip_gen';
-    const url = 'http://localhost:7071/api/clip_gen';
+    const url = 'https://clip-app.azurewebsites.net/api/clip_gen';
+    // const url = 'http://localhost:7071/api/clip_gen';
     const formData = new FormData();
     formData.append('file', file);
     const config = {
