@@ -66,7 +66,12 @@ function App() {
         </Card>
         <br />
         {
-          loading && <img src={'https://media.tenor.com/JBgYqrobdxsAAAAi/loading.gif'} alt='loading' width={'5%'}/>
+          loading && (
+            <>
+              <img src={'https://media.tenor.com/JBgYqrobdxsAAAAi/loading.gif'} alt='loading' width={'5%'}/>
+              <p>This process can take up to 1 minute on current hardware. Please don't use high resolution images. Enjoy!</p>
+            </>
+          )
         }
         {
           pieData && (
